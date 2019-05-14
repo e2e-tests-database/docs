@@ -121,8 +121,8 @@ We move to the commit where we can see exist a regression and we can also move t
 
 The tags that we can use: 
 
-| Type tag | Tag | Commit Id |
-| -------- | --- | --------- |
+| Type tag | Tag |
+| -------- | --- |
 | **Regression:** | regression-1
 | **Regression Fixed:** | regression-fixed-1 |
 
@@ -138,7 +138,7 @@ To run the test, follow these steps:
 
 ##### Dataset 
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/dataset/tree/master/Webapp-1/regression-1.
 
 #### Regression 2
 
@@ -181,7 +181,7 @@ To run the test, follow these steps:
 
 ##### Dataset 
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/dataset/tree/master/Webapp-1/regression-2.
 
 ## Webapp 2
 
@@ -250,7 +250,7 @@ To run the test, follow these steps:
 
 ##### Dataset 
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/dataset/tree/master/Webapp-2/regression-1.
 
 #### Regression 2
 
@@ -293,7 +293,7 @@ To run the test, follow these steps:
 
 ##### Dataset 
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/dataset/tree/master/Webapp-2/regression-2.
 
 #### Regression 3
 
@@ -334,7 +334,7 @@ To run the test, follow these steps:
 
 ##### Dataset 
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/dataset/tree/master/Webapp-2/regression-3.
 
 ## Webapp 3
 
@@ -399,4 +399,4 @@ To run the test, follow these steps:
 
 ##### Dataset 
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/dataset/tree/master/Webapp-3/regression-1.
