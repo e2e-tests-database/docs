@@ -1,29 +1,48 @@
 # E2E Tests Database
 
+E2E Tests Database is a collection of reproducible regressions in real applications and end to end tests.
 
 # Table of contents
 
-- [E2E Tests Database](#e2e-tests-database)
 - [The Projects](#the-projects)    
 - [Requirements](#requirements)    
-- [Docker enviroment](#docker-enviroment)    
-- [Webapp 1](#webapp-1)        
-    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image)        
-    - [Components of the application](#components-of-the-application)        
-    - [Regressions](#regressions)            
-        - [Regression 1](#regression-1)            
-        - [Regression 2](#regression-2)    
-- [Webapp 2](#webapp-2)        
-    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-1)        
-    - [Components of the application](#components-of-the-application-1)        
-    - [Regressions](#regressions-1)            
-        - [Regression 1](#regression-1-1)            
-        - [Regression 2](#regression-2-1)            
-        - [Regression 3](#regression-3)    
+- [Docker enviroment](#docker-enviroment)
+- [Webapp 1](#webapp-1)
+    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image)
+    - [Components of the application](#components-of-the-application)
+    - [Regressions](#regressions)
+        - [Regression 1](#regression-1)
+            - [Move to tags](#move-to-tags)
+            - [Run test](#run-test)
+            - [Dataset](#dataset)
+        - [Regression 2](#regression-2)
+            - [Move to tags](#move-to-tags-1)
+            - [Run test](#run-test-1)
+            - [Dataset](#dataset-1)
+- [Webapp 2](#webapp-2)
+    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-1)
+    - [Components of the application](#components-of-the-application-1)
+    - [Regressions](#regressions-1)
+        - [Regression 1](#regression-1-1)
+            - [Move to tags](#move-to-tags-2)
+            - [Run test](#run-test-2)
+            - [Dataset](#dataset-2)
+        - [Regression 2](#regression-2-1)
+            - [Move to tags](#move-to-tags-3)
+            - [Run test](#run-test-3)
+            - [Dataset](#dataset-3)
+        - [Regression 3](#regression-3)
+            - [Move to tags](#move-to-tags-4)
+            - [Run test](#run-test-4)
+            - [Dataset](#dataset-4)
 - [Webapp 3](#webapp-3)
-    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-2)        
-    - [Components of the application](#components-of-the-application-2)          
-    - [Regression 1](#regression-1-2)
+    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-2)
+    - [Components of the application](#components-of-the-application-2)
+    - [Regressions](#regressions-2)
+        - [Regression 1](#regression-1-2)
+            - [Move to tags](#move-to-tags-5)
+            - [Run test](#run-test-5)
+            - [Dataset](#dataset-5)
 
 # The Projects
 
@@ -96,12 +115,19 @@ This application contains two regressions that we can see below:
 | **Regression description**
 | The problem in this bug is the method called when click the button add new list, this method activate variable for collapse and uncollapse the div. The method change the variable “showAddList” but the event collapse listen the variable “isCollapsed”. |
 
-We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. The tags that we can use: 
+##### Move to tags
 
-| Type tag | Tag | 
-| -------- | --- |
+We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. 
+
+The tags that we can use: 
+
+| Type tag | Tag | Commit Id |
+| -------- | --- | --------- |
 | **Regression:** | regression-1
 | **Regression Fixed:** | regression-fixed-1 |
+
+
+##### Run test
 
 To run the test, follow these steps:
 
@@ -109,6 +135,8 @@ To run the test, follow these steps:
 * `cd webapp-1/TrackOrJargh`
 2. Run the test
 * `mvn -Dtest=TestE2EFront test`
+
+##### Dataset 
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
 
@@ -131,12 +159,18 @@ We also provide logs, videos and comparative logs between the commit with regres
 | **Regression description** |
 | The problem in this bug is the method of the api that return the num of genres (shows, films, books). The method failed counting the genres (the variable of count accumulated all). |  
 
-We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. The tags that we can use: 
+##### Move to tags
+
+We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. 
+
+The tags that we can use: 
 
 | Type tag | Tag | 
 | -------- | --- |
 | **Regression:** | regression-2
 | **Regression Fixed:** | regression-fixed-2 |
+
+##### Run test
 
 To run the test, follow these steps:
 
@@ -144,6 +178,8 @@ To run the test, follow these steps:
 * `cd webapp-1/TrackOrJargh`
 2. Run the test
 * `mvn -Dtest=TestAPIRestTemplate test`
+
+##### Dataset 
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
 
@@ -192,12 +228,18 @@ This application contains two regressions that we can see below:
 | **Bug description** |
 | The problem in this bug is that any person can see the profile of any other person. This problem is in the class at control of the role of users.
 
-We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. The tags that we can use: 
+##### Move to tags
+
+We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. 
+
+The tags that we can use: 
 
 | Type tag | Tag | 
 | -------- | --- |
 | **Regression:** | regression-1
 | **Regression Fixed:** | regression-fixed-1 |
+
+##### Run test
 
 To run the test, follow these steps:
 
@@ -206,8 +248,9 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkShowProfile test`
 
-We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
+##### Dataset 
 
+We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
 
 #### Regression 2
 
@@ -228,12 +271,18 @@ We also provide logs, videos and comparative logs between the commit with regres
 | **Bug description** |
 | The problem in this bug is that it can’t delete any course in admin mode. This problem is in the class of control role users, and in the class that contains the restcontroller of remove courses. |
 
-We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. The tags that we can use: 
+##### Move to tags
+
+We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. 
+
+The tags that we can use: 
 
 | Type tag | Tag | 
 | -------- | --- |
 | **Regression:** | regression-2
 | **Regression Fixed:** | regression-fixed-2 |
+
+##### Run test
 
 To run the test, follow these steps:
 
@@ -241,6 +290,8 @@ To run the test, follow these steps:
 * `cd webapp-2/AMICOServer`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkCreateCourse test`
+
+##### Dataset 
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
 
@@ -261,12 +312,18 @@ We also provide logs, videos and comparative logs between the commit with regres
 | **Bug description** |
 | The problem in this bug is that any user can’t download the contents of the courses. This problem is due to the method of download the pdf is misspelled and the browser launch an exception. |
 
-We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. The tags that we can use: 
+##### Move to tags 
+
+We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. 
+
+The tags that we can use: 
 
 | Type tag | Tag | 
 | -------- | --- |
 | **Regression:** | regression-3
 | **Regression Fixed:** | regression-fixed-3 |
+
+##### Run test
 
 To run the test, follow these steps:
 
@@ -274,6 +331,8 @@ To run the test, follow these steps:
 * `cd webapp-2/AMICOServer`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkDownload test`
+
+##### Dataset 
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
 
@@ -295,6 +354,10 @@ The application is compose of an back-end in Spring.
 
 The application contains a script for create a Docker image of the application. The script is in the folder `webapp-3/Docker`. To run the script use `create-image.sh name-image`
 
+### Regressions
+
+This application contains two regressions that we can see below:
+
 #### Regression 1
 
 | Documentation for the regression |
@@ -312,14 +375,20 @@ The application contains a script for create a Docker image of the application. 
 | **Link to changes** |
 | https://github.com/e2e-tests-database/webapp-3/commit/218c5bf20d3a58df2119338b64b54b79809d46e6#diff-736e54c81e6fb4e39639a611b132b965R33 |
 | **Regression description**
-| Escribir |
+| The problem in this bug is that any user of the application can see administration panel and realize changes in the platform. |
 
-We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. The tags that we can use: 
+##### Move to tags 
+
+We move to the commit where we can see exist a regression and we can also move to the commit where regression fixed using the command `git checkout tag`. 
+
+The tags that we can use: 
 
 | Type tag | Tag | 
 | -------- | --- |
 | **Regression:** | regression-1
 | **Regression Fixed:** | regression-fixed-1 |
+
+##### Run test
 
 To run the test, follow these steps:
 
@@ -327,5 +396,7 @@ To run the test, follow these steps:
 * `cd webapp-2/BREMS`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkShowAdminPage test`
+
+##### Dataset 
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link .
