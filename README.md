@@ -1,6 +1,30 @@
 # E2E Tests Database
 
 
+# Table of contents
+
+- [E2E Tests Database](#e2e-tests-database)
+- [The Projects](#the-projects)    
+- [Requirements](#requirements)    
+- [Docker enviroment](#docker-enviroment)    
+- [Webapp 1](#webapp-1)        
+    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image)        
+    - [Components of the application](#components-of-the-application)        
+    - [Regressions](#regressions)            
+        - [Regression 1](#regression-1)            
+        - [Regression 2](#regression-2)    
+- [Webapp 2](#webapp-2)        
+    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-1)        
+    - [Components of the application](#components-of-the-application-1)        
+    - [Regressions](#regressions-1)            
+        - [Regression 1](#regression-1-1)            
+        - [Regression 2](#regression-2-1)            
+        - [Regression 3](#regression-3)    
+- [Webapp 3](#webapp-3)
+    - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-2)        
+    - [Components of the application](#components-of-the-application-2)          
+    - [Regression 1](#regression-1-2)
+
 # The Projects
 
 We have used projects developed in Spring and Angular, the projects simulate real applications.
