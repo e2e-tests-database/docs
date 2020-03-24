@@ -14,11 +14,11 @@ E2E Tests Database is a collection of reproducible regressions in real applicati
         - [Regression 1](#regression-1)
             - [Move to tags](#move-to-tags)
             - [Run test](#run-test)
-            - [Dataset](#dataset)
+            - [Check Logs and Videos](#dataset)
         - [Regression 2](#regression-2)
             - [Move to tags](#move-to-tags-1)
             - [Run test](#run-test-1)
-            - [Dataset](#dataset-1)
+            - [Check Logs and Videos](#dataset-1)
 - [Webapp 2](#webapp-2)
     - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-1)
     - [Components of the application](#components-of-the-application-1)
@@ -26,15 +26,15 @@ E2E Tests Database is a collection of reproducible regressions in real applicati
         - [Regression 1](#regression-1-1)
             - [Move to tags](#move-to-tags-2)
             - [Run test](#run-test-2)
-            - [Dataset](#dataset-2)
+            - [Check Logs and Videos](#dataset-2)
         - [Regression 2](#regression-2-1)
             - [Move to tags](#move-to-tags-3)
             - [Run test](#run-test-3)
-            - [Dataset](#dataset-3)
+            - [Check Logs and Videos](#dataset-3)
         - [Regression 3](#regression-3)
             - [Move to tags](#move-to-tags-4)
             - [Run test](#run-test-4)
-            - [Dataset](#dataset-4)
+            - [Check Logs and Videos](#dataset-4)
 - [Webapp 3](#webapp-3)
     - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-2)
     - [Components of the application](#components-of-the-application-2)
@@ -42,7 +42,7 @@ E2E Tests Database is a collection of reproducible regressions in real applicati
         - [Regression 1](#regression-1-2)
             - [Move to tags](#move-to-tags-5)
             - [Run test](#run-test-5)
-            - [Dataset](#dataset-5)
+            - [Check Logs and Videos](#dataset-5)
 
 # The Projects
 
@@ -136,7 +136,7 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestE2EFront test`
 
-##### Dataset 
+##### Logs and Videos
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/logsAndVideos/tree/master/Webapp-1/regression-1.
 
@@ -179,7 +179,7 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestAPIRestTemplate test`
 
-##### Dataset 
+##### Logs and Videos
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/logsAndVideos/tree/master/Webapp-1/regression-2.
 
@@ -248,7 +248,7 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkShowProfile test`
 
-##### Dataset 
+##### Logs and Videos
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/logsAndVideos/tree/master/Webapp-2/regression-1.
 
@@ -291,7 +291,7 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkCreateCourse test`
 
-##### Dataset 
+##### Logs and Videos
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/logsAndVideos/tree/master/Webapp-2/regression-2.
 
@@ -332,7 +332,7 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkDownload test`
 
-##### Dataset 
+##### Logs and Videos
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/logsAndVideos/tree/master/Webapp-2/regression-3.
 
@@ -397,6 +397,6 @@ To run the test, follow these steps:
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkShowAdminPage test`
 
-##### Dataset 
+##### Logs and Videos
 
 We also provide logs, videos and comparative logs between the commit with regression and regression fixed commit. This files we can find in this link https://github.com/e2e-tests-database/logsAndVideos/tree/master/Webapp-3/regression-1.
