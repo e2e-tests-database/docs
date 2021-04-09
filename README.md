@@ -13,11 +13,13 @@ E2E Tests Database is a collection of reproducible regressions in real applicati
     - [Regressions](#regressions)
         - [Regression 1](#regression-1)
             - [Move to tags](#move-to-tags)
-            - [Run test](#run-test)
+            - [Run test by hand](#run-test-by-hand)
+            - [Run test using Docker image provided](#run-test-using-docker-image-provided)
             - [Check Logs and Videos](#dataset)
         - [Regression 2](#regression-2)
             - [Move to tags](#move-to-tags-1)
-            - [Run test](#run-test-1)
+            - [Run test by hand](#run-test-by-hand-1)
+            - [Run test using Docker image provided](#run-test-using-docker-image-provided-1)
             - [Check Logs and Videos](#dataset-1)
 - [Webapp 2](#webapp-2)
     - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-1)
@@ -25,15 +27,18 @@ E2E Tests Database is a collection of reproducible regressions in real applicati
     - [Regressions](#regressions-1)
         - [Regression 1](#regression-1-1)
             - [Move to tags](#move-to-tags-2)
-            - [Run test](#run-test-2)
+            - [Run test by hand](#run-test-by-hand-2)
+            - [Run test using Docker image provided](#run-test-using-docker-image-provided-2)
             - [Check Logs and Videos](#dataset-2)
         - [Regression 2](#regression-2-1)
             - [Move to tags](#move-to-tags-3)
-            - [Run test](#run-test-3)
+            - [Run test by hand](#run-test-by-hand-3)
+            - [Run test using Docker image provided](#run-test-using-docker-image-provided-3)
             - [Check Logs and Videos](#dataset-3)
         - [Regression 3](#regression-3)
             - [Move to tags](#move-to-tags-4)
-            - [Run test](#run-test-4)
+            - [Run test by hand](#run-test-by-hand-4)
+            - [Run test using Docker image provided](#run-test-using-docker-image-provided-4)
             - [Check Logs and Videos](#dataset-4)
 - [Webapp 3](#webapp-3)
     - [Steps to set up Webapp-1 (Only if not use the Docker image)](#steps-to-set-up-webapp-1-only-if-not-use-the-docker-image-2)
@@ -41,7 +46,8 @@ E2E Tests Database is a collection of reproducible regressions in real applicati
     - [Regressions](#regressions-2)
         - [Regression 1](#regression-1-2)
             - [Move to tags](#move-to-tags-5)
-            - [Run test](#run-test-5)
+            - [Run test by hand](#run-test-by-hand-5)
+            - [Run test using Docker image provided](#run-test-using-docker-image-provided-5)
             - [Check Logs and Videos](#dataset-5)
 
 # The Projects
@@ -127,7 +133,7 @@ The tags that we can use:
 | **Regression Fixed:** | regression-fixed-1 |
 
 
-##### Run test
+##### Run test by hand
 
 To run the test, follow these steps:
 
@@ -135,6 +141,22 @@ To run the test, follow these steps:
 * `cd webapp-1/TrackOrJargh`
 2. Run the test
 * `mvn -Dtest=TestE2EFront test`
+
+##### Run test using Docker image provided
+
+To run the regression test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-1 regression-1
+```
+
+To run the regression fixed test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-1 regression-fixed-1
+```
 
 ##### Logs and Videos
 
@@ -170,7 +192,7 @@ The tags that we can use:
 | **Regression:** | regression-2
 | **Regression Fixed:** | regression-fixed-2 |
 
-##### Run test
+##### Run test by hand
 
 To run the test, follow these steps:
 
@@ -178,6 +200,22 @@ To run the test, follow these steps:
 * `cd webapp-1/TrackOrJargh`
 2. Run the test
 * `mvn -Dtest=TestAPIRestTemplate test`
+
+##### Run test using Docker image provided
+
+To run the regression test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-1 regression-2
+```
+
+To run the regression fixed test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-1 regression-fixed-2
+```
 
 ##### Logs and Videos
 
@@ -239,7 +277,7 @@ The tags that we can use:
 | **Regression:** | regression-1
 | **Regression Fixed:** | regression-fixed-1 |
 
-##### Run test
+##### Run test by hand
 
 To run the test, follow these steps:
 
@@ -247,6 +285,22 @@ To run the test, follow these steps:
 * `cd webapp-2/AMICOServer`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkShowProfile test`
+
+##### Run test using Docker image provided
+
+To run the regression test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-2 regression-1
+```
+
+To run the regression fixed test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-2 regression-fixed-1
+```
 
 ##### Logs and Videos
 
@@ -282,7 +336,7 @@ The tags that we can use:
 | **Regression:** | regression-2
 | **Regression Fixed:** | regression-fixed-2 |
 
-##### Run test
+##### Run test by hand
 
 To run the test, follow these steps:
 
@@ -290,6 +344,22 @@ To run the test, follow these steps:
 * `cd webapp-2/AMICOServer`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkCreateCourse test`
+
+##### Run test using Docker image provided
+
+To run the regression test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-2 regression-2
+```
+
+To run the regression fixed test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-2 regression-fixed-2
+```
 
 ##### Logs and Videos
 
@@ -323,7 +393,7 @@ The tags that we can use:
 | **Regression:** | regression-3
 | **Regression Fixed:** | regression-fixed-3 |
 
-##### Run test
+##### Run test by hand
 
 To run the test, follow these steps:
 
@@ -331,6 +401,22 @@ To run the test, follow these steps:
 * `cd webapp-2/AMICOServer`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkDownload test`
+
+##### Run test using Docker image provided
+
+To run the regression test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-2 regression-3
+```
+
+To run the regression fixed test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-2 regression-fixed-3
+```
 
 ##### Logs and Videos
 
@@ -388,7 +474,7 @@ The tags that we can use:
 | **Regression:** | regression-1
 | **Regression Fixed:** | regression-fixed-1 |
 
-##### Run test
+##### Run test by hand
 
 To run the test, follow these steps:
 
@@ -396,6 +482,22 @@ To run the test, follow these steps:
 * `cd webapp-2/BREMS`
 2. Run the test
 * `mvn -Dtest=TestE2EFront#checkShowAdminPage test`
+
+##### Run test using Docker image provided
+
+To run the regression test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-3 regression-1
+```
+
+To run the regression fixed test:
+
+```
+docker run --rm -v /tmp/e2e-dataset/logs:/home/dataset/logs \
+		codeurjc/e2e-dataset webapp-3 regression-fixed-1
+```
 
 ##### Logs and Videos
 
